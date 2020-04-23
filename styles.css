@@ -1,0 +1,59 @@
+/* Goofy borders around everything to help us see the layout. */
+* {
+    border: 2px solid cornflowerblue;
+    margin: 5px;
+    padding: 3px;
+    }
+    /* body takes up full viewport and extends all the way to the edges. */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    }
+body {
+    height: 100vh;
+    width: 768px;
+    }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a1{
+    flex: .8;
+    font-size: 2vw;
+}
+
+.two{
+    display: flex;
+    align-self: center;
+}
+
+.container-2{
+    display: flex;
+}
+
+
+.container-2 a2{
+    flex: .25;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.container-2 a3{
+    flex: .75;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100px;
+}
+
+.container-3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
